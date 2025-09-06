@@ -3,6 +3,10 @@
     {
       "source": "/api/:path*",
       "destination": "https://ujjain-simhasta-1.onrender.com/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
