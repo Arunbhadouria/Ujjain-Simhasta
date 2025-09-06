@@ -26,7 +26,7 @@ const ProfilePage = () => {
           return;
         }
 
-        const res = await fetch("http://localhost:3001/api/v1/auth/me", {
+        const res = await fetch("https://ujjain-simhasta-1.onrender.com/api/v1/auth/me", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
