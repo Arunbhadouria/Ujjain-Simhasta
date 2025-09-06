@@ -35,7 +35,7 @@ const LostAndFound: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
 
   // Base URL for your backend
-  const BASE_URL = "http://localhost:3001";
+  const BASE_URL = "https://ujjain-simhasta-1.onrender.com";
 
   // Fetch items
   const fetchItems = async () => {
