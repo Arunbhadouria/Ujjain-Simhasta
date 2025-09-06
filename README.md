@@ -56,14 +56,26 @@ Create a .env file in Backend/ and add:
 env
 Copy code
 PORT=3001
-DB_HOST=localhost
-DB_USER=your_username
-DB_PASS=your_password
-DB_NAME=ujjain_simhasta
-JWT_SECRET=your_secret_key
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_email_password
-Start backend server:
+
+# Database
+DB_HOST=your_database_host
+DB_PORT=your_database_port
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+DB_SSL=true
+
+# Auth
+JWT_SECRET=your_jwt_secret
+REFRESH_TOKEN_SECRET=your_refresh_token_secret
+
+# Email (SMTP)
+SMTP_HOST=your_smtp_host
+SMTP_PORT=your_smtp_port
+SMTP_SECURE=true
+SMTP_USER=your_email_user
+SMTP_PASS=your_email_password
+TO_EMAIL=admin_email@example.com
 
 bash
 Copy code
@@ -74,9 +86,9 @@ Copy code
 cd ../Frontend
 npm install
 npm start
+
 4️⃣ Access the App
 Frontend: http://localhost:3000
-
 Backend API: http://localhost:3001
 
 📂 Project Structure
@@ -99,11 +111,9 @@ Ujjain-Simhasta/
 Contributions are welcome!
 
 Fork the repo
-
 Create a new branch (feature/xyz)
 
 Commit changes
-
 Push to your fork and submit a PR
 
 📜 License
@@ -111,12 +121,10 @@ This project is licensed under the MIT License – feel free to use and modify w
 
 👥 Team
 Arun Bhadouria – Project Owner
-
 Harsh Manmode – Backend & API Development
-
 Contributors – See commits
 
-🌐 Deployment Links
-🔗 Frontend: Ujjain-Simhasta (Vercel)
 
-🔗 Backend API: API Endpoint
+🔗 **Live Demo**:  
+- 🌐 Frontend: [ujjain-simhasta.vercel.app](http://ujjain-simhasta.vercel.app/)  
+- ⚙️ Backend API: [ujjain-simhasta-1.onrender.com](https://ujjain-simhasta-1.onrender.com/)  
