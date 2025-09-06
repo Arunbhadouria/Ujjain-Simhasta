@@ -11,8 +11,7 @@ import {
   Shield,
 } from "lucide-react";
 
-const API_BASE =
-  import.meta.env.VITE_API_BASE || "http://localhost:3001/api/v1/auth";
+const API_BASE = "/api/v1/auth";
 
 // ✅ JWT decode helper
 const decodeJWT = (token) => {
